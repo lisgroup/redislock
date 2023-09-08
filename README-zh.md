@@ -20,7 +20,7 @@ import (
     "context"
     "fmt"
     "github.com/go-redis/redis/v8"
-	"github.com/lisgroup/redislock"
+    "github.com/lisgroup/redislock"
 )
 
 func main() {
