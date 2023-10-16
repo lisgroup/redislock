@@ -3,7 +3,7 @@
 English | [简体中文](README-zh.md)
 
 ## Introduce
-redislock is a distributed lock implemented based on Redis. The project is modified based on github.com/jefferyjob/go-redislock, thanks to the original author's contribution.
+redislock is a distributed lock implemented based on Redis. The project is modified based on [github.com/jefferyjob/go-redislock](https://github.com/jefferyjob/go-redislock), thanks to the original author's contribution.
 
 ## Quick start
 
@@ -57,7 +57,7 @@ func main() {
 ### Custom Token
 You can customize the lock's token functionality by using the `WithToken` option:
 ```go
-lock := redislock. New(ctx, redisClient,
+lock := redislock.New(ctx, redisClient,
     redislock. WithToken("your token")
 )
 ```
@@ -65,7 +65,7 @@ lock := redislock. New(ctx, redisClient,
 ### Custom lock timeout
 You can customize the lock's timeout function by using the `WithTimeout` option:
 ```go
-lock := redislock. New(ctx, redisClient,
+lock := redislock.New(ctx, redisClient,
     redislock.WithTimeout(time.Duration(10) * time.Second)
 )
 ```
